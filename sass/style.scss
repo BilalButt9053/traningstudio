@@ -1,0 +1,610 @@
+@import 'mixin';
+@import 'variables';
+
+body{
+    font-family: $font-family;
+    padding: 0;
+    margin: 0;
+    color: $text-color;
+}
+::selection{
+    background-color: $span;
+    color:$white;
+}
+.banner1{
+    position: relative;
+    .video{
+        width: 100%;
+        position: relative;
+        video{
+            width: 100%;
+            object-fit:cover;
+        }
+    }
+    .overlay-banner{
+        position: absolute;
+        background: rgba(0,0,0,0.7);
+        width: 100%;
+        height: 700px;
+        top: 0;
+        right: 0;
+    }
+    .banner1-text{
+        position: absolute;
+        width: 100%;
+        top: 0;
+        z-index: 2;
+        .nav-bar{
+            position: fixed;
+            background-color: rgba(250,250,250,0.99);
+            width: 100%;
+            display: grid;
+            grid-template-rows: auto;
+            z-index: 1;
+
+            .navbar-text{
+                display: grid;
+                grid-template-columns: auto auto;
+                width: 80%;
+                margin: auto;
+                .left-navbar{
+                    letter-spacing: 1px;
+                    font-weight:$font-weight9;
+                    span{
+                        color:$span;
+                    }
+                    h1{
+                        font-size: $font-size28;
+                        font-weight: $font-weight9;
+                        color: $heading-color;
+                        margin: 15px 0;
+                    }
+                }
+                .right-navbar{
+                    .show{
+                        display: grid;
+                        grid-template-columns: auto auto auto auto auto auto;
+                        list-style: none;
+                        li{
+                            padding: 8px;
+                            .home{
+                                color: $a-button;
+                            }
+                        }
+                    }
+                    a{
+                        text-decoration: none;
+                        color:$heading-color;
+                        font-size: $font-size13;
+                        font-weight: $font-weight6;
+                    }
+                    a:hover{
+                        color: $navbar-hover;
+                    }
+                    button{
+                        @include   navbar-button();
+                    }
+                    button:hover{
+                        @include navbar-hover();
+                    }
+                }
+                .menu-icon{
+                    width: 40px;
+                    height: 40px;
+                    object-fit: cover;
+                    transform: rotate(180deg);
+                    display: none;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    .banner-text{
+        display: grid;
+        grid-template-columns: auto;
+        text-align: center;
+        margin-top: 16%;
+        h3{
+            font-weight: $font-weight9;
+            color: $white;
+            margin: 0;
+        }
+        h1{
+            font-size: $font-size83;
+            letter-spacing: 2px;
+            font-weight:$font-weight9;
+            color:$white;
+            margin: 15px;
+            span{
+                color: $span;
+            }
+        }
+        button{
+            @include button();
+        }
+        button:hover{
+            @include  button-hover;
+        }
+    }    
+    }
+}
+.about{
+    @include heading;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 65px;
+    width: 80%;
+    padding: 80px 0;
+    margin: auto;
+    .card-data{
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto auto;
+        @include card-data;
+    }    
+}
+.banner2{
+    background: url(../images/cta-bg.jpg);
+    width: 100%;
+    .banner2-data{
+        width: 60%;
+        margin: auto;
+        text-align: center;
+        padding: 120px  0;
+        h1{
+            color:$white;
+            font-size: $font-size30;
+            font-weight: $font-weight9;
+            span{
+                color: $span;
+            }
+        }
+        p{
+            color: $white;
+            font-size: $font-size15;
+            line-height: 1.5;
+            padding-bottom: 20px;
+        }
+        button{
+            @include button;
+        }
+        button:hover{
+            @include button-hover;
+        }
+    }
+}
+.classes{
+    @include heading;   
+}
+.class-container{
+    padding:80px 0;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 45px;
+    width: 80%;
+    margin: auto;
+    .class-data{
+        display: grid;
+        grid-template-columns: auto;
+        row-gap: 30px;
+        .class-card{
+            display: grid;
+            grid-template-columns: auto auto;
+            background-color: $white;
+            box-shadow:  0px 0px 15px rgb(0 0 0 / 10%);
+            padding: 22px 35px;
+            border-radius: 5px;
+            a{
+                text-decoration: none;
+                margin-top: 5px;
+                margin-left: 20px;
+                font-weight: $font-weight6;
+                font-size: $font-size20;
+                color: $heading-color;
+            }
+            .first-class{
+                color: $a-button; 
+            }    
+        }    
+        button{
+            @include button;
+            width: 100%;
+            padding: 24px 30px;
+            font-size: $font-size20;
+            font-weight:$font-weight6;
+            border-radius: 5px;
+        }   
+        button:hover{
+            @include button-hover;
+        }
+    }    
+    .class-info{
+        width: 100%;
+        h1{
+            color: $heading-color;
+            font-size: $font-size23;
+            font-weight: $font-weight6;
+            margin: 10px 0;
+        }
+        p{
+            font-size: $font-size14;
+            margin: 10px 0px;
+            line-height: 1.5;
+        }
+        img{
+            width: 100%;
+            border-radius: 5px;
+        }
+        button{
+            @include button;
+        }
+        button:hover{
+            @include button-hover;
+        }
+    }
+}
+.banner3{
+    background: url(../images/schedule-bg.jpg);
+    width: 100%;
+    color: $white;
+    padding: 50px 0px 50px 0px;
+    .banner3-text{
+        width: 80%;
+        margin: auto;
+        .banner3-head{
+            @include heading;
+            h1{
+                color: $white;
+                font-weight: $font-weight9;
+            }
+        }
+        .working-days{
+            text-align: center;
+            padding-top: 50px;
+            font-size: $font-size16;
+            a{
+                text-decoration: none;
+                color: $white;
+            }  
+            .monday{
+                color: $a-button;
+            } 
+            span{
+                color: $white;
+                margin: 0px 10px;
+            } 
+        }
+        table{
+            border-collapse: collapse;
+            width: 70%;
+            margin: auto;
+            margin: 50px auto;
+            td{
+                border: 1px solid #ddd;
+                text-align: center;
+                padding: 40px 20px;
+                font-size: $font-size15;
+                margin: 0;
+            }
+        }
+    }
+}
+.trainer{
+    @include heading;
+}
+.trainers{
+    display: grid;
+    grid-template-columns: 27.5% 27.5% 27.5%;
+    column-gap: 30px;
+    justify-content: center;
+    padding: 70px 0;
+    .trainers-card{
+        background: $white;
+        box-shadow: 0px 0px 15px rgb(0 0 0 / 10%);
+        padding: 40px;
+        border-radius: 5px;
+        img{
+            width: 100%;
+        }
+        h4{
+            color: $h4;
+            font-weight: $font-weight6;
+            font-size: $font-size15;
+        }
+        h1{
+            color: $heading-color;
+            font-size: $font-size18;
+            font-weight: $font-weight6;
+        }
+        p{
+            font-size: $font-size15;
+        }
+        .trainers-icons{
+            color: $heading-color;
+            i{
+                margin-right:15px ;
+            }
+        }
+    }
+}
+.banner4{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    .form{
+        background: url(../images/contact-bg.jpg);
+        padding: 80px;
+        form{
+            background-color: $white;
+            color: $input-color;
+            border-radius: 5px;
+            padding: 40px 35px ;
+            .name{
+                width: 38%;
+                border: 1px solid #ddd;
+                padding: 15px 15px;
+                font-family: $font-family;
+            }
+            .email{
+                margin-left: 10px;
+                @extend .name;
+            }
+            .subject{
+                margin-top: 20px;
+                width: 90%;
+                @extend .name
+            }
+            textarea{
+                color:$input-color ;
+                font-size: $font-size16;
+                font-family: $font-family;
+                margin-top: 35px;
+                border: 1px solid #ddd;
+                width: 96%;
+                height: 150px;
+                resize: none;
+            }
+            button{ 
+                @include button;
+                margin-top:30px;
+            }
+            button:hover{
+                @include button-hover;
+            }
+        }
+    }
+}
+footer{
+    text-align: center;
+    font-size: $font-size13;
+    padding: 15px 15px;
+    color:#000;
+    a{
+        text-decoration: none;
+        color: $span;
+        font-size: $font-size13;
+    }
+}
+@media screen and (max-width:1200px) {
+    .card-container{
+        width: 90%;
+        .card-data{
+            .card-text{
+                position: relative;
+                p{
+                    font-size: $font-size14;
+                }
+                button{
+                    position: absolute;
+                    left: -115px;
+                    bottom: -20px;
+                }
+            }
+        }    
+    }
+    .banner4 .form form .name{
+        width: 90%;
+    }
+    .banner4 .form form .email{
+        margin-top: 20px;
+        margin-left: 0;
+        width: 90%;
+    }
+}
+@media screen and (max-width:1000px) {
+    .class-container{
+        width: 90%;
+    }
+    .banner3{
+        .banner3-text{
+            table{
+                width: 90%;
+            }
+        }    
+    }
+    .about{
+        width: 70%;
+    }
+    .banner2{
+        .banner2-data{
+            width: 70%;
+        }    
+    }    
+    .classes{
+        width: 70%;
+    }
+    .banner3 .banner3-text .banner3-head{
+        width: 70%;
+    }
+    .trainer{
+        width: 70%;
+    }
+    .trainers{
+        grid-template-columns: 70%;
+        .trainers-card{
+            margin-top: 40px;
+        }
+    }
+    .class-container{
+        width: 70%;
+        margin: auto;
+        grid-template-columns:100% ;
+        
+        .class-data{
+            grid-template-columns: 100%;
+        }
+        .class-info{
+            margin-top:20px ;
+        }
+    }
+    .banner4 .form {
+        padding: 40px;
+    }
+}
+@media screen and (max-width:897px) { 
+    .banner1{  
+        .banner1-text{
+            .nav-bar{
+                .navbar-text{
+                    .right-navbar{
+                        display: none;
+                    }
+                    .menu-icon{
+                        display: block;
+                        position: absolute;
+                        top: 17px;
+                        right: 75px;
+                    }
+                }
+            }
+        }
+    }
+    .show{
+        position: absolute;
+        list-style: none;
+        padding: 0;
+        top:20px;
+        left: 0;
+        text-align: center;
+        background-color: rgba(250, 250, 250, 0.99);
+        width: 100%;
+        li{
+            padding: 5px;
+            a{
+                text-decoration: none;
+                color: $heading-color;
+            }
+            .home{
+                color: $span;
+            }
+        }
+        button{
+            @include navbar-button;
+            padding:10px 20px;
+            margin-bottom: 20px;
+        }
+
+    }
+    .banner1 .banner1-text .banner-text h1{
+        font-size: $font-size60;
+        width: 80%;
+        margin: auto;
+        margin-top: 40px;
+    }
+    .card-container{
+        width: 70%;
+        grid-template-columns: 100%;
+
+    }
+    .banner4{
+        width: 100%;
+        margin: auto;
+        grid-template-columns: 100%;
+        .map{
+            height: 600px;
+        }
+    }
+}
+@media screen and (max-width:570px){
+    .banner1 .banner1-text .nav-bar{
+        position: relative;
+    }
+    .banner1 .banner1-text .banner-text h3{
+        margin-top: 100px;
+    }
+    .about{
+        width: 90%;
+    }
+    .banner3 .banner3-text .working-days span{
+        margin: 0;
+    }
+    .card-container{
+        width: 90%;
+        row-gap: 40px;
+        padding: 30px 0;
+        .card-data{
+            grid-template-columns: 90%;
+            .card-text{
+                margin-left: 0;
+                button{
+                    position: relative;
+                    left: 0;
+                    bottom: 0;
+                }
+            }
+        }
+    }
+    .banner2 .banner2-data{
+        width: 90%;
+    }
+    .classes{
+        width: 90%;
+    }
+    .class-container{
+        width: 90%;
+    }
+    .banner3 .banner3-text{
+        width: 100%;
+    }
+    .banner3 .banner3-text table td{
+        padding: 15px 10px;
+    }
+    .trainer{
+        width:90%
+    }
+    .trainers{
+        grid-template-columns: 90%;
+    }
+}
+@media screen and (max-width:425px){
+   
+    .banner1 .banner1-text .banner-text{
+        margin-top: 0px;
+    }
+    .banner1 .banner1-text .nav-bar .navbar-text{
+        width: 90%;
+    }
+    .banner1 .banner1-text .nav-bar .navbar-text .menu-icon{
+        right: 30px;
+    }
+}
+@media screen and (max-width:350px){
+    .banner1 .banner1-text .nav-bar .navbar-text .left-navbar h1{
+        font-size:$font-size20;
+    }
+    .banner1 .banner1-text .nav-bar .navbar-text .menu-icon{
+        top:10px;
+    }
+    .banner3 .banner3-text table td{
+        padding: 0;
+    }
+    .banner3 .banner3-text .working-days{
+        font-size: $font-size13;
+    }
+}
+
+

@@ -1,0 +1,751 @@
+body {
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+  color: #7a7a7a;
+}
+
+::selection {
+  background-color: #ed563b;
+  color: #fff;
+}
+
+.banner1 {
+  position: relative;
+}
+.banner1 .video {
+  width: 100%;
+  position: relative;
+}
+.banner1 .video video {
+  width: 100%;
+  object-fit: cover;
+}
+.banner1 .overlay-banner {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 700px;
+  top: 0;
+  right: 0;
+}
+.banner1 .banner1-text {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  z-index: 2;
+}
+.banner1 .banner1-text .nav-bar {
+  position: fixed;
+  background-color: rgba(250, 250, 250, 0.99);
+  width: 100%;
+  display: grid;
+  grid-template-rows: auto;
+  z-index: 1;
+}
+.banner1 .banner1-text .nav-bar .navbar-text {
+  display: grid;
+  grid-template-columns: auto auto;
+  width: 80%;
+  margin: auto;
+}
+.banner1 .banner1-text .nav-bar .navbar-text .left-navbar {
+  letter-spacing: 1px;
+  font-weight: 900;
+}
+.banner1 .banner1-text .nav-bar .navbar-text .left-navbar span {
+  color: #ed563b;
+}
+.banner1 .banner1-text .nav-bar .navbar-text .left-navbar h1 {
+  font-size: 28px;
+  font-weight: 900;
+  color: #232d39;
+  margin: 15px 0;
+}
+.banner1 .banner1-text .nav-bar .navbar-text .right-navbar .show {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  list-style: none;
+}
+.banner1 .banner1-text .nav-bar .navbar-text .right-navbar .show li {
+  padding: 8px;
+}
+.banner1 .banner1-text .nav-bar .navbar-text .right-navbar .show li .home {
+  color: #ed563b;
+}
+.banner1 .banner1-text .nav-bar .navbar-text .right-navbar a {
+  text-decoration: none;
+  color: #232d39;
+  font-size: 13px;
+  font-weight: 600;
+}
+.banner1 .banner1-text .nav-bar .navbar-text .right-navbar a:hover {
+  color: #f33211;
+}
+.banner1 .banner1-text .nav-bar .navbar-text .right-navbar button {
+  padding: 8px 5px;
+  color: #fff;
+  background: #ed563b;
+  border: none;
+  margin-top: -4px;
+}
+.banner1 .banner1-text .nav-bar .navbar-text .right-navbar button:hover {
+  color: #f33211;
+  background-color: #f9735b;
+  transition: 0.5s;
+}
+.banner1 .banner1-text .nav-bar .navbar-text .menu-icon {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  transform: rotate(180deg);
+  display: none;
+}
+.banner1 .banner1-text .nav-bar .navbar-text .menu-icon img {
+  width: 100%;
+  height: 100%;
+}
+.banner1 .banner1-text .banner-text {
+  display: grid;
+  grid-template-columns: auto;
+  text-align: center;
+  margin-top: 16%;
+}
+.banner1 .banner1-text .banner-text h3 {
+  font-weight: 900;
+  color: #fff;
+  margin: 0;
+}
+.banner1 .banner1-text .banner-text h1 {
+  font-size: 83px;
+  letter-spacing: 2px;
+  font-weight: 900;
+  color: #fff;
+  margin: 15px;
+}
+.banner1 .banner1-text .banner-text h1 span {
+  color: #ed563b;
+}
+.banner1 .banner1-text .banner-text button {
+  padding: 14px 20px;
+  font-size: 15px;
+  color: #fff;
+  background: #ed563b;
+  border: none;
+}
+.banner1 .banner1-text .banner-text button:hover {
+  background-color: #f9735b;
+}
+
+.about {
+  text-align: center;
+  width: 40%;
+  margin: auto;
+}
+.about h1 {
+  color: #232d39;
+  font-size: 28px;
+  font-weight: 900;
+  margin-top: 130px;
+  margin-bottom: 20px;
+}
+.about h1 span {
+  color: #ed563b;
+}
+.about p {
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  row-gap: 65px;
+  width: 80%;
+  padding: 80px 0;
+  margin: auto;
+}
+.card-container .card-data {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto;
+  display: grid;
+  grid-template-columns: auto auto;
+  width: 95%;
+}
+.card-container .card-data .card-text {
+  margin-left: 15px;
+  text-align: left;
+}
+.card-container .card-data .card-text h2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0px 0px 5px 0px;
+  color: #232d39;
+}
+.card-container .card-data .card-text p {
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0px;
+}
+.card-container .card-data .card-text p a {
+  color: #007bff;
+  text-decoration: none;
+}
+.card-container .card-data .card-text button {
+  border: none;
+  background: none;
+  color: #ed563b;
+  padding: 0;
+}
+
+.banner2 {
+  background: url(../images/cta-bg.jpg);
+  width: 100%;
+}
+.banner2 .banner2-data {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  padding: 120px 0;
+}
+.banner2 .banner2-data h1 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 900;
+}
+.banner2 .banner2-data h1 span {
+  color: #ed563b;
+}
+.banner2 .banner2-data p {
+  color: #fff;
+  font-size: 15px;
+  line-height: 1.5;
+  padding-bottom: 20px;
+}
+.banner2 .banner2-data button {
+  padding: 14px 20px;
+  font-size: 15px;
+  color: #fff;
+  background: #ed563b;
+  border: none;
+}
+.banner2 .banner2-data button:hover {
+  background-color: #f9735b;
+}
+
+.classes {
+  text-align: center;
+  width: 40%;
+  margin: auto;
+}
+.classes h1 {
+  color: #232d39;
+  font-size: 28px;
+  font-weight: 900;
+  margin-top: 130px;
+  margin-bottom: 20px;
+}
+.classes h1 span {
+  color: #ed563b;
+}
+.classes p {
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.class-container {
+  padding: 80px 0;
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 45px;
+  width: 80%;
+  margin: auto;
+}
+.class-container .class-data {
+  display: grid;
+  grid-template-columns: auto;
+  row-gap: 30px;
+}
+.class-container .class-data .class-card {
+  display: grid;
+  grid-template-columns: auto auto;
+  background-color: #fff;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  padding: 22px 35px;
+  border-radius: 5px;
+}
+.class-container .class-data .class-card a {
+  text-decoration: none;
+  margin-top: 5px;
+  margin-left: 20px;
+  font-weight: 600;
+  font-size: 20px;
+  color: #232d39;
+}
+.class-container .class-data .class-card .first-class {
+  color: #ed563b;
+}
+.class-container .class-data button {
+  padding: 14px 20px;
+  font-size: 15px;
+  color: #fff;
+  background: #ed563b;
+  border: none;
+  width: 100%;
+  padding: 24px 30px;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 5px;
+}
+.class-container .class-data button:hover {
+  background-color: #f9735b;
+}
+.class-container .class-info {
+  width: 100%;
+}
+.class-container .class-info h1 {
+  color: #232d39;
+  font-size: 23px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+.class-container .class-info p {
+  font-size: 14px;
+  margin: 10px 0px;
+  line-height: 1.5;
+}
+.class-container .class-info img {
+  width: 100%;
+  border-radius: 5px;
+}
+.class-container .class-info button {
+  padding: 14px 20px;
+  font-size: 15px;
+  color: #fff;
+  background: #ed563b;
+  border: none;
+}
+.class-container .class-info button:hover {
+  background-color: #f9735b;
+}
+
+.banner3 {
+  background: url(../images/schedule-bg.jpg);
+  width: 100%;
+  color: #fff;
+  padding: 50px 0px 50px 0px;
+}
+.banner3 .banner3-text {
+  width: 80%;
+  margin: auto;
+}
+.banner3 .banner3-text .banner3-head {
+  text-align: center;
+  width: 40%;
+  margin: auto;
+}
+.banner3 .banner3-text .banner3-head h1 {
+  color: #232d39;
+  font-size: 28px;
+  font-weight: 900;
+  margin-top: 130px;
+  margin-bottom: 20px;
+}
+.banner3 .banner3-text .banner3-head h1 span {
+  color: #ed563b;
+}
+.banner3 .banner3-text .banner3-head p {
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: 300;
+}
+.banner3 .banner3-text .banner3-head h1 {
+  color: #fff;
+  font-weight: 900;
+}
+.banner3 .banner3-text .working-days {
+  text-align: center;
+  padding-top: 50px;
+  font-size: 16px;
+}
+.banner3 .banner3-text .working-days a {
+  text-decoration: none;
+  color: #fff;
+}
+.banner3 .banner3-text .working-days .monday {
+  color: #ed563b;
+}
+.banner3 .banner3-text .working-days span {
+  color: #fff;
+  margin: 0px 10px;
+}
+.banner3 .banner3-text table {
+  border-collapse: collapse;
+  width: 70%;
+  margin: auto;
+  margin: 50px auto;
+}
+.banner3 .banner3-text table td {
+  border: 1px solid #ddd;
+  text-align: center;
+  padding: 40px 20px;
+  font-size: 15px;
+  margin: 0;
+}
+
+.trainer {
+  text-align: center;
+  width: 40%;
+  margin: auto;
+}
+.trainer h1 {
+  color: #232d39;
+  font-size: 28px;
+  font-weight: 900;
+  margin-top: 130px;
+  margin-bottom: 20px;
+}
+.trainer h1 span {
+  color: #ed563b;
+}
+.trainer p {
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.trainers {
+  display: grid;
+  grid-template-columns: 27.5% 27.5% 27.5%;
+  column-gap: 30px;
+  justify-content: center;
+  padding: 70px 0;
+}
+.trainers .trainers-card {
+  background: #fff;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  border-radius: 5px;
+}
+.trainers .trainers-card img {
+  width: 100%;
+}
+.trainers .trainers-card h4 {
+  color: #ed563b;
+  font-weight: 600;
+  font-size: 15px;
+}
+.trainers .trainers-card h1 {
+  color: #232d39;
+  font-size: 18px;
+  font-weight: 600;
+}
+.trainers .trainers-card p {
+  font-size: 15px;
+}
+.trainers .trainers-card .trainers-icons {
+  color: #232d39;
+}
+.trainers .trainers-card .trainers-icons i {
+  margin-right: 15px;
+}
+
+.banner4 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.banner4 .form {
+  background: url(../images/contact-bg.jpg);
+  padding: 80px;
+}
+.banner4 .form form {
+  background-color: #fff;
+  color: #7a7a7a;
+  border-radius: 5px;
+  padding: 40px 35px;
+}
+.banner4 .form form .name, .banner4 .form form .subject, .banner4 .form form .email {
+  width: 38%;
+  border: 1px solid #ddd;
+  padding: 15px 15px;
+  font-family: "Poppins", sans-serif;
+}
+.banner4 .form form .email {
+  margin-left: 10px;
+}
+.banner4 .form form .subject {
+  margin-top: 20px;
+  width: 90%;
+}
+.banner4 .form form textarea {
+  color: #7a7a7a;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  margin-top: 35px;
+  border: 1px solid #ddd;
+  width: 96%;
+  height: 150px;
+  resize: none;
+}
+.banner4 .form form button {
+  padding: 14px 20px;
+  font-size: 15px;
+  color: #fff;
+  background: #ed563b;
+  border: none;
+  margin-top: 30px;
+}
+.banner4 .form form button:hover {
+  background-color: #f9735b;
+}
+
+footer {
+  text-align: center;
+  font-size: 13px;
+  padding: 15px 15px;
+  color: #000;
+}
+footer a {
+  text-decoration: none;
+  color: #ed563b;
+  font-size: 13px;
+}
+
+@media screen and (max-width: 1200px) {
+  .card-container {
+    width: 90%;
+  }
+  .card-container .card-data .card-text {
+    position: relative;
+  }
+  .card-container .card-data .card-text p {
+    font-size: 14px;
+  }
+  .card-container .card-data .card-text button {
+    position: absolute;
+    left: -115px;
+    bottom: -20px;
+  }
+
+  .banner4 .form form .name, .banner4 .form form .email, .banner4 .form form .subject {
+    width: 90%;
+  }
+
+  .banner4 .form form .email {
+    margin-top: 20px;
+    margin-left: 0;
+    width: 90%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .class-container {
+    width: 90%;
+  }
+
+  .banner3 .banner3-text table {
+    width: 90%;
+  }
+
+  .about {
+    width: 70%;
+  }
+
+  .banner2 .banner2-data {
+    width: 70%;
+  }
+
+  .classes {
+    width: 70%;
+  }
+
+  .banner3 .banner3-text .banner3-head {
+    width: 70%;
+  }
+
+  .trainer {
+    width: 70%;
+  }
+
+  .trainers {
+    grid-template-columns: 70%;
+  }
+  .trainers .trainers-card {
+    margin-top: 40px;
+  }
+
+  .class-container {
+    width: 70%;
+    margin: auto;
+    grid-template-columns: 100%;
+  }
+  .class-container .class-data {
+    grid-template-columns: 100%;
+  }
+  .class-container .class-info {
+    margin-top: 20px;
+  }
+
+  .banner4 .form {
+    padding: 40px;
+  }
+}
+@media screen and (max-width: 897px) {
+  .banner1 .banner1-text .nav-bar .navbar-text .right-navbar {
+    display: none;
+  }
+  .banner1 .banner1-text .nav-bar .navbar-text .menu-icon {
+    display: block;
+    position: absolute;
+    top: 17px;
+    right: 75px;
+  }
+
+  .show {
+    position: absolute;
+    list-style: none;
+    padding: 0;
+    top: 20px;
+    left: 0;
+    text-align: center;
+    background-color: rgba(250, 250, 250, 0.99);
+    width: 100%;
+  }
+  .show li {
+    padding: 5px;
+  }
+  .show li a {
+    text-decoration: none;
+    color: #232d39;
+  }
+  .show li .home {
+    color: #ed563b;
+  }
+  .show button {
+    padding: 8px 5px;
+    color: #fff;
+    background: #ed563b;
+    border: none;
+    margin-top: -4px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+  }
+
+  .banner1 .banner1-text .banner-text h1 {
+    font-size: 60px;
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+  }
+
+  .card-container {
+    width: 70%;
+    grid-template-columns: 100%;
+  }
+
+  .banner4 {
+    width: 100%;
+    margin: auto;
+    grid-template-columns: 100%;
+  }
+  .banner4 .map {
+    height: 600px;
+  }
+}
+@media screen and (max-width: 570px) {
+  .banner1 .banner1-text .nav-bar {
+    position: relative;
+  }
+
+  .banner1 .banner1-text .banner-text h3 {
+    margin-top: 100px;
+  }
+
+  .about {
+    width: 90%;
+  }
+
+  .banner3 .banner3-text .working-days span {
+    margin: 0;
+  }
+
+  .card-container {
+    width: 90%;
+    row-gap: 40px;
+    padding: 30px 0;
+  }
+  .card-container .card-data {
+    grid-template-columns: 90%;
+  }
+  .card-container .card-data .card-text {
+    margin-left: 0;
+  }
+  .card-container .card-data .card-text button {
+    position: relative;
+    left: 0;
+    bottom: 0;
+  }
+
+  .banner2 .banner2-data {
+    width: 90%;
+  }
+
+  .classes {
+    width: 90%;
+  }
+
+  .class-container {
+    width: 90%;
+  }
+
+  .banner3 .banner3-text {
+    width: 100%;
+  }
+
+  .banner3 .banner3-text table td {
+    padding: 15px 10px;
+  }
+
+  .trainer {
+    width: 90%;
+  }
+
+  .trainers {
+    grid-template-columns: 90%;
+  }
+}
+@media screen and (max-width: 425px) {
+  .banner1 .banner1-text .banner-text {
+    margin-top: 0px;
+  }
+
+  .banner1 .banner1-text .nav-bar .navbar-text {
+    width: 90%;
+  }
+
+  .banner1 .banner1-text .nav-bar .navbar-text .menu-icon {
+    right: 30px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .banner1 .banner1-text .nav-bar .navbar-text .left-navbar h1 {
+    font-size: 20px;
+  }
+
+  .banner1 .banner1-text .nav-bar .navbar-text .menu-icon {
+    top: 10px;
+  }
+
+  .banner3 .banner3-text table td {
+    padding: 0;
+  }
+
+  .banner3 .banner3-text .working-days {
+    font-size: 13px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

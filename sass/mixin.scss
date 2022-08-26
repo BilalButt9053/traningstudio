@@ -1,0 +1,72 @@
+@mixin navbar-button {
+    padding: 8px 5px;
+    color: #fff;
+    background: $a-button;
+    border: none;
+    margin-top: -4px;
+}
+@mixin navbar-hover{    
+    color:$navbar-hover;
+    background-color: $nav-button;
+    transition: 0.5s;
+}
+@mixin button {
+    padding: 14px 20px;
+    font-size:$font-size15;
+    color: #fff;
+    background: $a-button;
+    border: none;
+}
+@mixin button-hover {
+    background-color:$button-hover;
+}
+@mixin heading {
+    text-align: center;
+    width: 40%;
+    margin: auto;
+    h1{
+        color: $heading-color;
+        font-size: $font-size28;
+        font-weight: $font-weight9;
+        margin-top: 130px;
+        margin-bottom: 20px;
+        span{
+            color: $span;
+        }
+    }
+    p{
+        margin-top: 20px;
+        font-size: $font-size14;
+        font-weight: $font-weight3;
+    }
+}
+@mixin card-data {
+        display: grid;
+        grid-template-columns: auto auto;
+        width: 95%;
+        .card-text{
+            margin-left: 15px;
+            text-align: left;
+            h2{
+                font-size: $font-size18;
+                font-weight: $font-weight6;
+                margin:0px 0px 5px 0px;
+                color:$heading-color;
+            }
+            p{
+                font-size: $font-size14;
+                line-height: 1.5;
+                margin: 0px;
+                a{
+                    color:$a;
+                    text-decoration: none;
+                }
+            }
+            button{
+                border: none;
+                background: none;
+                color:$a-button;
+                padding: 0;
+            }
+        }
+}
