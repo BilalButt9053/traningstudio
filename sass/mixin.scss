@@ -19,6 +19,7 @@
 }
 @mixin button-hover {
     background-color:$button-hover;
+    color:$navbar-hover;
 }
 @mixin heading {
     text-align: center;
